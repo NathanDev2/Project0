@@ -26,13 +26,14 @@ srand(time(0));
 clock_t startTime, endTime; 
 double timeTaken; // Store time here
 
+cout << "Testing with Fully Shuffled Array using 10,000 values" << endl;
 SortType list1a(10000); // Using Selection Sort
 list1a.SetRandomArray();
 startTime = clock();
 list1a.SelectionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << "Time elapsed using Selection Sort with 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+cout << "Time elapsed using Selection Sort with Fully Shuffled array using 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
 
 SortType list1b(10000); // Using Insertion Sort
 list1b.SetRandomArray();
@@ -40,7 +41,7 @@ startTime = clock();
 list1b.InsertionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << "Time elapsed using Insertion Sort with 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+cout << "Time elapsed using Insertion Sort with Fully Shuffled array using 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
 
 SortType list1c(10000); // Using Bubble Sort
 list1c.SetRandomArray();
@@ -48,7 +49,7 @@ startTime = clock();
 list1c.BubbleSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << "Time elapsed using Bubble Sort with 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+cout << "Time elapsed using Bubble Sort with Fully Shuffled array using 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
 
 MergeSortClass list1d(10000);
 list1d.SetRandomArray();
@@ -56,7 +57,7 @@ startTime = clock();
 list1d.MergeSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elapsed using Merge Sort with 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+cout << "Time elapsed using Merge Sort with Fully Shuffled array using 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
 
 QuickSortClass list1e(10000);
 list1e.SetRandomArray();
@@ -64,7 +65,7 @@ startTime = clock();
 list1e.QuickSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elapsed using Quick Sort with 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+cout << "Time elapsed using Quick Sort with Fully Shuffled array using 10,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
 cout << "Testing 1 completed." << endl;
 cout << endl;
 
@@ -191,130 +192,6 @@ cout << endl;
 
 
 
-
-
-//------------------------------------------------------------------------------------------------------------------------------------------
-cout << "Testing with Array Shuffled Array at 10% using 10000 values" << endl;
-list1a.SetShuffledArray();
- startTime = clock();
-  list1a.SelectionSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/ static_cast<double>(CLOCKS_PER_SEC);
-cout << "Time elasped using Selction Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-list1b.SetShuffledArray();
-  startTime = clock();
-  list1b.InsertionSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
-  cout << "Time elasped using Insertion Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-
-list1c.SetShuffledArray();
-  startTime = clock();
-  list1c.BubbleSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
-  cout << "Time elasped using Bubble Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-list1d.SetShuffledArray();
-startTime = clock();
-list1d.MergeSort(0,9999);
-endTime = clock();
-timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elasped using Mergesort " << fixed << setprecision(2) << timeTaken <<  " seconds" << endl;
-
-list1e.SetShuffledArray();
-startTime = clock();
-list1e.QuickSort(0,9999);
-endTime = clock();
-timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elasped using Quicksort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-cout << "Testing 2 completed." << endl;
-cout << endl;
-
-
-cout << "Testing with Sorted Array using 10000 values" << endl;
-list1a.SetSortedArray();
-startTime = clock();
-  list1a.SelectionSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/ static_cast<double>(CLOCKS_PER_SEC);
-cout << "Time elasped using Selction Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-list1b.SetSortedArray();
-  startTime = clock();
-  list1b.InsertionSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
-  cout << "Time elasped using Insertion Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-
-list1c.SetSortedArray();
-  startTime = clock();
-  list1c.BubbleSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
-  cout << "Time elasped using Bubble Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-list1d.SetSortedArray();
-startTime = clock();
-list1d.MergeSort(0,9999);
-endTime = clock();
-timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elasped using Mergesort " << fixed << setprecision(2) << timeTaken <<  " seconds" << endl;
-
-list1e.SetSortedArray();
-startTime = clock();
-list1e.QuickSort(0,9999);
-endTime = clock();
-timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elasped using Quicksort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-cout << "Testing 3 completed." << endl;
-cout << endl;
-
-
-
-
-//------------------------------------------------------------------------------------------------------
-cout << "Testing with Reversed Array using 10000 values" << endl;
-list1a.SetReversedArray();
-startTime = clock();
-  list1a.SelectionSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/ static_cast<double>(CLOCKS_PER_SEC);
-cout << "Time elasped using Selction Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-list1b.SetReversedArray();
-  startTime = clock();
-  list1b.InsertionSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
-  cout << "Time elasped using Insertion Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-
-list1c.SetReversedArray();
-  startTime = clock();
-  list1c.BubbleSort();
-  endTime = clock();
-  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
-  cout << "Time elasped using Bubble Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-
-list1d.SetReversedArray();
-startTime = clock();
-list1d.MergeSort(0,9999);
-endTime = clock();
-timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elasped using Mergesort " << fixed << setprecision(2) << timeTaken <<  " seconds" << endl;
-
-list1e.SetReversedArray();
-startTime = clock();
-list1e.QuickSort(0,9999);
-endTime = clock();
-timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "Time elasped using Quicksort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
-cout << "Testing 4 completed." << endl;
-cout << endl;
 
 //------------------------------------------------------------------------------------------------------------------------------------------
 
