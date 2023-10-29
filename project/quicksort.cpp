@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+/*
 class QuickSortClass{
     public:
             QuickSortClass();
@@ -77,3 +78,4 @@ void QuickSortClass::QuickSort(int l, int h){
         QuickSort(j+1,h); // Sort the second half of the array
     }
 }
+*/

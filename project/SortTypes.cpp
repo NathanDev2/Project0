@@ -2,8 +2,6 @@
 #include <ctime>
 #include <time.h>
 #include <climits>
-#include "mergesort.cpp"
-#include "quicksort.cpp"
 #include <iomanip>
 using namespace std;
 
