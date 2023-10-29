@@ -26,7 +26,7 @@ class SortType{
         void SetRandomArray(); // Sets an array with 10 random values
         void SetSortedArray();
         void SetShuffledArray();
-        void SetReverseArray();
+        void SetReversedArray();
         void ShowArray(); // Display Array
         void SelectionSort(); // Selection Sort Func
         void InsertionSort(); // Insertion Sort Func
@@ -79,7 +79,7 @@ void SortType::SetShuffledArray() {
 }
 
 
-void SortType::SetReverseArray() {
+void SortType::SetReversedArray() {
     for (int i = 0; i < size; ++i) {
         a[i] = size - i;
     }

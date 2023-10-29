@@ -47,10 +47,10 @@ void QuickSortClass::SetSortedArray() {
 
 void QuickSortClass::SetShuffledArray() {
     SetSortedArray();
-    int shuffleCount = static_cast<int>(size * 10);
+    int shuffleCount = static_cast<int>(size * 0.1);
     for (int i = 0; i < shuffleCount; ++i) {
-        int index1 = rand() % size;
-        int index2 = rand() % size;
+        int index1 = i;
+        int index2 = i+1;
         swap(a[index1], a[index2]);
     }
 }

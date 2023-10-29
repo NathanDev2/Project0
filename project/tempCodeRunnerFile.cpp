@@ -1,1 +1,1 @@
-i <= h &&
+list1a.ShowArray();
