@@ -1,73 +1,104 @@
 #include <iostream>
 using namespace std;
 
-/*
+
 class QuickSortClass{
     public:
-            QuickSortClass();
+            QuickSortClass(int n);
             ~QuickSortClass();
         void SetRandomArray();
+        void SetShuffledArray();
+        void SetSortedArray();
         void ShowArray();
+        void SetReversedArray();
         int Partition(int l, int h);
         void QuickSort(int l,int j);
 
     private:
         int* a;
-        int l;
-        int h;
         int size;
         
 };
 
-QuickSortClass::QuickSortClass(){
-    size = 10;
+QuickSortClass::QuickSortClass(int n){
+    size = n;
     a = new int[size];
-    l = 0;
-    h = size;
+ 
 }
+
 QuickSortClass::~QuickSortClass() {
 
     delete[] a; // Free the memory allocated for 'a'
 }
-void QuickSortClass::SetRandomArray(){ // Makes a array of random values and random size
-    for(int i=0;i<size; i++){ // For whatever the size is...
-        a[i] = rand()%100;    // Put A Random value
+
+void QuickSortClass::SetRandomArray(){ // Makes a array of 10 random values
+    for(int i=0;i<size; i++){
+        long long num = 1 + rand()%(size-1); // Generate numbers 1-N
+        a[i] = num;
+    }
+}
+
+
+void QuickSortClass::SetSortedArray() { 
+    for (int i = 0; i < size; ++i) {
+        a[i] = i + 1;
+    }
+}
+
+void QuickSortClass::SetShuffledArray() {
+    SetSortedArray();
+    int shuffleCount = static_cast<int>(size * 10);
+    for (int i = 0; i < shuffleCount; ++i) {
+        int index1 = rand() % size;
+        int index2 = rand() % size;
+        swap(a[index1], a[index2]);
+    }
+}
+
+
+void QuickSortClass::SetReversedArray() {
+    for (int i = 0; i < size; ++i) {
+        a[i] = size - i;
     }
 }
 
 void QuickSortClass::ShowArray(){
-    cout << "[";
-    for(int i=0;i<size;i++){
-        cout << a[i];
-    if(i != size-1){
-        cout << ", ";
+    int count = 0;
+    int Display100 = 100; // Display only 100 elements in each list
+       for (int i = 0; i < size; i++) {
+        cout << a[i] << " ";
+        count++;
+        // Check if we have printed 10 elements
+        if ((i + 1) % 10 == 0) {
+            cout << endl; // Move to the next line after 10 elements
+        }
     }
-    }
-    cout << "]" << endl;
+    cout << endl;
+    cout << "Total amount of elements shown: " << count << endl;
 }
 
 int QuickSortClass::Partition(int l, int h) {
-    int pivot = a[l]; 
+    int pivot = a[l];
+    int i = l - 1;
+    int j = h + 1;
 
-    int i = l-1; // Set i equal l so we can increment
-    int j = h;// Set j equal h so we can increment
-
-    while (i<j) {
+    while (true) {
         do {
-            i++; 
-        } while (a[i] <= pivot); // Keep incrementing until this is false
+            i++;
+        } while (a[i] < pivot);
 
         do {
             j--;
-        } while (a[j] > pivot); // Keep incrementing until this is false
-    if(i<j){
-       swap(a[i], a[j]); // Swap the unsorted values
+        } while (a[j] > pivot);
+
+        if (i >= j) {
+            return j;
+        }
+
+        swap(a[i], a[j]);
     }
-     // Swap if and only if there is a new pivot point, otherwise divide and conquer arrays with QuickSort();
-    }
-    swap(a[l],a[j]);
-    return j;
 }
+
 
 
 
@@ -78,4 +109,4 @@ void QuickSortClass::QuickSort(int l, int h){
         QuickSort(j+1,h); // Sort the second half of the array
     }
 }
-*/
+

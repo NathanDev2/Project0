@@ -29,30 +29,54 @@ int main(){
 
 srand(time(0));
 clock_t startTime, endTime; 
-float timeTaken; // Store time here
+double timeTaken; // Store time here
+cout << "Testing with Fully Shuffled Array using 10000 values" << endl;
 
-MergeSortClass list1(1000000);
-list1.SetRandomArray();
+
+SortType list1a(10000); // Using Selection Sort
+  list1a.SetRandomArray();
+  startTime = clock();
+  list1a.SelectionSort();
+  endTime = clock();
+  timeTaken = (endTime-startTime)/ static_cast<double>(CLOCKS_PER_SEC);
+cout << "Time elasped using Selction Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+  
+  SortType list1b(10000); // Using Insertion Sort
+  list1b.SetRandomArray();
+  startTime = clock();
+  list1b.InsertionSort();
+  endTime = clock();
+  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
+  cout << "Time elasped using Insertion Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+
+  SortType list1c(10000); // Using Bubble Sort
+  list1c.SetRandomArray();
+  startTime = clock();
+  list1c.BubbleSort();
+  endTime = clock();
+  timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC);
+  cout << "Time elasped using Bubble Sort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+
+MergeSortClass list1d(10000);
+list1d.SetRandomArray();
 startTime = clock();
-list1.MergeSort(0,999999);
+list1d.MergeSort(0,9999);
 endTime = clock();
-timeTaken = (endTime-startTime)/CLOCKS_PER_SEC*1000; // calculating time in seconds
-list1.ShowArray();
+timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "Time elasped using Mergesort " << fixed << setprecision(2) << timeTaken <<  " seconds" << endl;
 
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds " << endl;
 
-/* SortType list2(10000);
-  list2.SetRandomArray();
-  clock_t startTime2;  
-  clock_t endTime2;
-  startTime2 = clock();
-  list2.MergeSort(0,99999);
-  endTime2 = clock();
-  list2.ShowArray();
-  double time2 = (endTime2-startTime2)/CLOCKS_PER_SEC*1000;
-  cout << "Time elapsed for MergeSort: "  << time2 << " ms " << endl;
+ QuickSortClass list1e(10000);
+list1e.SetRandomArray();
+startTime = clock();
+list1e.QuickSort(0,9999);
+endTime = clock();
+timeTaken = (endTime-startTime)/static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "Time elasped using Quicksort " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
+cout << "Testing 1 completed." << endl;
 
-  */
+
+  
  
   return 0;
 }

@@ -100,20 +100,7 @@ void SortType::ShowArray(){
 }
 
 void SortType::SelectionSort(){ 
-    int barWidth = 0;
     for(int i = 0; i < size; i++) {
-        // Display the progress bar
-        float progress = static_cast<float>(i) / size * 100; // Added a timer to check progress of the sorting progress
-        cout << "\rSorting: [";
-        int barWidth = 50;
-        int pos = barWidth * progress / 100;
-        for (int j = 0; j < barWidth; ++j) {
-            if (j < pos) cout << "=";
-            else if (j == pos) cout << ">";
-            else cout << " ";
-        }
-        cout << "] " << setprecision(2) << fixed << progress << "%";
-        
         for(int j = i + 1; j < size; j++) {
             if(a[j] < a[i]) {
                 swap(a[j], a[i]);
@@ -121,12 +108,6 @@ void SortType::SelectionSort(){
         }
     }
 
-    // Clear the progress bar
-    cout << "\rSorting: [";
-    for (int j = 0; j < barWidth; ++j) {
-        cout << "=";
-    }
-    cout << "] 100.00%" << endl;
 }
 
  /*   for(int i=0;i<size;i++){ // I will be our starting index

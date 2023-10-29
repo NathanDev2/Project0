@@ -32,7 +32,7 @@ MergeSortClass::~MergeSortClass(){
 
 void MergeSortClass::SetRandomArray(){ // Makes a array of 10 random values
     for(int i=0;i<size; i++){
-        long long num = 1 + rand()%(size-1); // Generate numbers 1-N
+        long long num = 1 + rand()%(size); // Generate numbers 1-N
         a[i] = num;
     }
 }
