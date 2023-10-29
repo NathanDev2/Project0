@@ -196,7 +196,7 @@ cout << endl;
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 // Testing with 100,000
-
+cout << "Testing with Fully Shuffled Array using 100,000 values" << endl;
 SortType list2a(100000); // Using Selection Sort
 list2a.SetRandomArray();
 startTime = clock();
@@ -369,6 +369,7 @@ cout << endl;
 //------------------------------------------------------------------------------------------------------------------------------------------
 
 // Testing with 1,000,000
+cout << "Testing with FUlly Shuffled Array using 1,000,000 values" << end;
 SortType list3a(1000000); // Using Selection Sort
 list3a.SetRandomArray();
 startTime = clock();
