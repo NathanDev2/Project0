@@ -36,7 +36,7 @@ class SortType{
 
     private:
         int* a;
-        long long size;
+        int size;
         int capacity = INT_MAX;
         
 };
@@ -57,7 +57,7 @@ size = n;
 
 void SortType::SetRandomArray(){ // Makes a array of 10 random values
     for(int i=0;i<size; i++){
-        long long num = 1 + rand()%(size-1); // Gets values from 1-10000 without including 0
+        int num = 1 + rand()%(size); // Gets values from 1-10000 without including 0
         a[i] = num;
     }
 }

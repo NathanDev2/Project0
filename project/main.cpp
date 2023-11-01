@@ -323,6 +323,7 @@ cout << endl;
 //------------------------------------------------------------------------------------------------------------------------------------------
 cout << "Testing with Sorted Array using 100,000 values" << endl;
 
+
 list2a.SetSortedArray();
 startTime = clock();
 list2a.SelectionSort();
@@ -360,13 +361,6 @@ cout << "Time elapsed using Quick Sort with Sorted Array with 100,000 values: " 
 cout << "Testing 4 completed." << endl;
 cout << endl;
 
-
-
-
-
-
-
-//------------------------------------------------------------------------------------------------------------------------------------------
 
 // Testing with 1,000,000
 cout << "Testing with Fully Shuffled Array using 1,000,000 values" << endl;
@@ -532,6 +526,7 @@ timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calc
 cout << "Time elapsed using Quick Sort with Sorted Array with 1,000,000 values: " << fixed << setprecision(2) << timeTaken << " seconds" << endl;
 cout << "Testing 4 completed." << endl;
 cout << endl;
+
 
   return 0;
 }

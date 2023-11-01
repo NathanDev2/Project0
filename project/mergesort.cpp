@@ -32,7 +32,7 @@ MergeSortClass::~MergeSortClass(){
 
 void MergeSortClass::SetRandomArray(){ // Makes a array of 10 random values
     for(int i=0;i<size; i++){
-        long long num = 1 + rand()%(size); // Generate numbers 1-N
+        int num = 1 + rand()%(size); // Generate numbers 1-N
         a[i] = num;
     }
 }
@@ -64,7 +64,7 @@ void MergeSortClass::SetReversedArray() {
 void MergeSortClass::ShowArray(){
     int count = 0;
     int Display100 = 100; // Display only 100 elements in each list
-       for (int i = 0; i < 100; i++) {
+       for (int i = 0; i < Display100; i++) {
         cout << a[i] << " ";
         count++;
         // Check if we have printed 10 elements

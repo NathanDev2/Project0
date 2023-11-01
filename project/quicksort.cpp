@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 using namespace std;
 
 
@@ -33,7 +34,7 @@ QuickSortClass::~QuickSortClass() {
 
 void QuickSortClass::SetRandomArray(){ // Makes a array of 10 random values
     for(int i=0;i<size; i++){
-        long long num = 1 + rand()%(size-1); // Generate numbers 1-N
+        int num = 1 + rand()%(size-1); // Generate numbers 1-N
         a[i] = num;
     }
 }
@@ -41,7 +42,8 @@ void QuickSortClass::SetRandomArray(){ // Makes a array of 10 random values
 
 void QuickSortClass::SetSortedArray() { 
     for (int i = 0; i < size; ++i) {
-        a[i] = i + 1;
+        int num = i + 1;
+        a[i] = num;
     }
 }
 
@@ -65,7 +67,7 @@ void QuickSortClass::SetReversedArray() {
 void QuickSortClass::ShowArray(){
     int count = 0;
     int Display100 = 100; // Display only 100 elements in each list
-       for (int i = 0; i < size; i++) {
+       for (int i = 0; i < Display100; i++) {
         cout << a[i] << " ";
         count++;
         // Check if we have printed 10 elements
@@ -78,9 +80,11 @@ void QuickSortClass::ShowArray(){
 }
 
 int QuickSortClass::Partition(int l, int h) {
+    int randomPivot = l + rand() % (h - l + 1); // Choose a random pivot point
+    swap(a[l],a[randomPivot]); // Bring pivot to the beginning of the array
     int pivot = a[l];
-    int i = l - 1;
-    int j = h + 1;
+    int i = l - 1; // This is important to use -1 since we use a do-while loop rather than a while loop
+    int j = h + 1; // using +1 for same reason above
 
     while (true) {
         do {
