@@ -8,7 +8,8 @@ int main(){
 
 char userInput; // Get user input
 while(userInput != 'q'){ // Let us use q as our base case to close our program
-system("clear"); 
+system("cls"); 
+system("color 0A");
     cout << "\t\t\t*******************************************" << endl;
     cout << "\t\t\t|                                         |" << endl;
     cout << "\t\t\t|    Choose a sort algorithm or press 'q' |" << endl;
@@ -26,7 +27,9 @@ system("clear");
     cout << "\t\t\t Enter here: "; // Get users Sort Type choice
     cin >> userInput;
     
-    system("clear"); // Clear screen
+    system("cls"); // Clear screen
+    system("color 0C");
+
     switch(userInput){ // Out 2nd menu for chose of size to go with their sort choice
     case '1': 
     cout << "\t\t\t******************************" << endl;
@@ -104,7 +107,8 @@ system("clear");
 char sizeOption;
 cin >> sizeOption;
 
-system("clear");
+system("cls");
+system("color 0B");
 
 if(userInput == '1' && sizeOption == '1'){ // Insertion Sort for 10,000
     Insertionsort10000();

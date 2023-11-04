@@ -13,15 +13,6 @@ clock_t startTime, endTime;
 double timeTaken; // Store time here
 
 
-/*Goals for this program
-     - Include MergeSort 
-     - Include Quicksort
-     - Add outputs for all functions in main()
-     - record data for 10,000 size array for every possible array sort (total of 20)
-
-    Goals right now
-        - Get merge sort and quicksort working to display sorted arrays of n
-*/
 
 // All 10,000 sort values
 
