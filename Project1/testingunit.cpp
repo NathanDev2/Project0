@@ -23,8 +23,7 @@ double timeTaken; // Store time here
         - Get merge sort and quicksort working to display sorted arrays of n
 */
 
-
-
+// All 10,000 sort values
 
 void Insertionsort10000(){
     srand(time(0));
@@ -34,9 +33,9 @@ startTime = clock();
 list1b.InsertionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " \t\tSort Type: Random Array " << endl;
+cout << " \t\t\t\tSort Type: Random Array " << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list1b.SetShuffledArray();
@@ -44,9 +43,9 @@ startTime = clock();
 list1b.InsertionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " \t\tSort Type: Shuffled Array " << endl;
+cout << " \t\t\t\tSort Type: Shuffled Array " << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list1b.SetReversedArray();
@@ -54,9 +53,9 @@ startTime = clock();
 list1b.InsertionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " \t\tSort Type: Reversed Array " << endl;
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list1b.SetSortedArray();
@@ -64,9 +63,9 @@ startTime = clock();
 list1b.InsertionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " \t\tSort Type: Sorted Array " << endl;
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 
@@ -81,9 +80,9 @@ startTime = clock();
 list1b.SelectionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " Sort Type: Random Array " << endl;
+cout << "\t\t\t\tSort Type: Random Array " << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list1b.SetShuffledArray();
@@ -91,9 +90,9 @@ startTime = clock();
 list1b.SelectionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " Sort Type: Shuffled Array " << endl;
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list1b.SetReversedArray();
@@ -101,9 +100,9 @@ startTime = clock();
 list1b.SelectionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " Sort Type: Reversed Array " << endl;
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list1b.SetSortedArray();
@@ -111,9 +110,9 @@ startTime = clock();
 list1b.SelectionSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << " Sort Type: Sorted Array" << endl;
+cout << "\t\t\t\tSort Type: Sorted Array" << endl;
 list1b.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 }
@@ -127,9 +126,9 @@ startTime = clock();
 list2a.BubbleSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << "Sort Type: Random Array " << endl;
+cout << "\t\t\t\tSort Type: Random Array " << endl;
 list2a.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2a.SetShuffledArray();
@@ -137,9 +136,9 @@ startTime = clock();
 list2a.BubbleSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << "Sort Type: Shuffled Array " << endl;
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
 list2a.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2a.SetReversedArray();
@@ -147,9 +146,9 @@ startTime = clock();
 list2a.BubbleSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << "Sort Type: Reversed Array " << endl;
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
 list2a.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2a.SetSortedArray();
@@ -157,9 +156,9 @@ startTime = clock();
 list2a.BubbleSort();
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
-cout << "Sort Type: Sorted Array " << endl;
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
 list2a.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 }
 
@@ -171,9 +170,9 @@ startTime = clock();
 list2d.MergeSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "\tSort Type: Random Array " << endl;
+cout << "\t\t\t\tSort Type: Random Array " << endl;
 list2d.ShowArray();
-cout << "\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2d.SetShuffledArray();
@@ -181,9 +180,9 @@ startTime = clock();
 list2d.MergeSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "\tSort Type: Shuffled Array " << endl;
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
 list2d.ShowArray();
-cout << "\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2d.SetReversedArray();
@@ -191,9 +190,9 @@ startTime = clock();
 list2d.MergeSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "\tSort Type: Reversed Array " << endl;
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
 list2d.ShowArray();
-cout << "\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2d.SetSortedArray();
@@ -201,9 +200,9 @@ startTime = clock();
 list2d.MergeSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << "\tSort Type: Sorted Array " << endl;
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
 list2d.ShowArray();
-cout << "\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 }
 
@@ -216,9 +215,9 @@ startTime = clock();
 list2e.QuickSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << " Sort Type: Random Array " << endl;
+cout << "\t\t\t\tSort Type: Random Array " << endl;
 list2e.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2e.SetShuffledArray();
@@ -226,9 +225,9 @@ startTime = clock();
 list2e.QuickSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << " Sort Type: Shuffled Array " << endl;
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
 list2e.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2e.SetReversedArray();
@@ -236,9 +235,9 @@ startTime = clock();
 list2e.QuickSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << " Sort Type: Reversed Array " << endl;
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
 list2e.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 
 list2e.SetSortedArray();
@@ -246,18 +245,470 @@ startTime = clock();
 list2e.QuickSort(0, 9999);
 endTime = clock();
 timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
-cout << " Sort Type: Sorted Array " << endl;
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
 list2e.ShowArray();
-cout << "Time elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+
+
+// All 100,000 sort values
+
+
+void Insertionsort100000(){
+     srand(time(0));
+SortType list1b(100000); // Using Insertion Sort
+list1b.SetRandomArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << " \t\t\t\tSort Type: Random Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetShuffledArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << " \t\t\t\tSort Type: Shuffled Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetReversedArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetSortedArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+void Selectionsort100000(){
+      srand(time(0));
+SortType list1b(100000); // Using Insertion Sort
+
+list1b.SetRandomArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetShuffledArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetReversedArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetSortedArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Sorted Array" << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+void Bubblesort100000(){
+    srand(time(0));
+SortType list2a(100000);
+
+list2a.SetRandomArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2a.SetShuffledArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2a.SetReversedArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2a.SetSortedArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl; 
+}
+
+void Mergesort100000(){
+ srand(time(0));
+MergeSortClass list2d(100000);
+list2d.SetRandomArray();
+startTime = clock();
+list2d.MergeSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2d.SetShuffledArray();
+startTime = clock();
+list2d.MergeSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2d.SetReversedArray();
+startTime = clock();
+list2d.MergeSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2d.SetSortedArray();
+startTime = clock();
+list2d.MergeSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+void Quicksort100000(){
+     srand(time(0));
+QuickSortClass list2e(100000);
+
+list2e.SetRandomArray();
+startTime = clock();
+list2e.QuickSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2e.SetShuffledArray();
+startTime = clock();
+list2e.QuickSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2e.SetReversedArray();
+startTime = clock();
+list2e.QuickSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2e.SetSortedArray();
+startTime = clock();
+list2e.QuickSort(0, 99999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+
+// All 1,000,000 sorts 
+
+void Insertionsort1000000(){
+    srand(time(0));
+SortType list1b(1000000); // Using Insertion Sort
+list1b.SetRandomArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << " \t\t\t\tSort Type: Random Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetShuffledArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << " \t\t\t\tSort Type: Shuffled Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetReversedArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetSortedArray();
+startTime = clock();
+list1b.InsertionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+void Selectionsort1000000(){
+          srand(time(0));
+SortType list1b(1000000); // Using Insertion Sort
+
+list1b.SetRandomArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetShuffledArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetReversedArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list1b.SetSortedArray();
+startTime = clock();
+list1b.SelectionSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Sorted Array" << endl;
+list1b.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+void Bubblesort1000000(){
+        srand(time(0));
+SortType list2a(1000000);
+
+list2a.SetRandomArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2a.SetShuffledArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2a.SetReversedArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2a.SetSortedArray();
+startTime = clock();
+list2a.BubbleSort();
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC);
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list2a.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl; 
+}
+
+void Mergesort1000000(){
+    srand(time(0));
+MergeSortClass list2d(1000000);
+list2d.SetRandomArray();
+startTime = clock();
+list2d.MergeSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2d.SetShuffledArray();
+startTime = clock();
+list2d.MergeSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2d.SetReversedArray();
+startTime = clock();
+list2d.MergeSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2d.SetSortedArray();
+startTime = clock();
+list2d.MergeSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list2d.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+}
+
+void Quicksort1000000(){
+         srand(time(0));
+QuickSortClass list2e(1000000);
+
+list2e.SetRandomArray();
+startTime = clock();
+list2e.QuickSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Random Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2e.SetShuffledArray();
+startTime = clock();
+list2e.QuickSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Shuffled Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2e.SetReversedArray();
+startTime = clock();
+list2e.QuickSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Reversed Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
+cout << endl;
+
+list2e.SetSortedArray();
+startTime = clock();
+list2e.QuickSort(0, 999999);
+endTime = clock();
+timeTaken = (endTime - startTime) / static_cast<double>(CLOCKS_PER_SEC); // calculating time in seconds
+cout << "\t\t\t\tSort Type: Sorted Array " << endl;
+list2e.ShowArray();
+cout << "\t\t\t\tTime elapsed: " << fixed << setprecision(2) << timeTaken << " seconds" << endl; 
 cout << endl;
 }
 
 
 
 
-
-
-
+// Other Tests
 
 void TESTTENTHOUSAND(){
 srand(time(0));
@@ -701,9 +1152,8 @@ cout << endl;
 void TESTONEMILLION(){
 
 }
-
-
-void TestAllSorts(){ // WARNING THIS WILL TAKE HOURS/DAYS DO NOT RECOMMMED
+ // WARNING THIS WILL TAKE HOURS/DAYS DO NOT RECOMMMED
+void TestAllSorts(){ 
 srand(time(0));
 
 cout << "Testing with Fully Shuffled Array using 10,000 values" << endl;
