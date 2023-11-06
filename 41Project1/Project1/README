@@ -1,0 +1,20 @@
+PURPOSE OF THIS PROGRAM
+This Program is for users to be able to test Several sort types ranging from time complexities of O(n^2) - O(nlogn). 
+Note: Program only runnable on Window OS.
+
+How to open program
+    1. Download Zip File and Extract
+    2. Run menu.exe (DO NOT RUN THROUGH AN IDE TERMINAL)
+
+How to use
+    1. User must enter a valid number that corresponds with their sort type 
+    2. User must also enter a valid number that corresponds with the available sizes to run
+    3. If 1 and 2 have been met user will be shown with the array type(random, shuffle, sorted, or reverse), the first 100 elements in the array and the time taken to run(shown in seconds)
+    4. Press any key after to continue
+
+Other Comments
+    There are comments explaining the use of every cpp and how they come together to work in the menu
+
+    NOTE: This program might not take the inputs from the user very nicely and will either loop infinitly or show a blank screen. If so please rerun the program.
+    NOTE: Highly Recommend to run through the menu.exe as my IDE terminal and others don't behave well with the program
+
